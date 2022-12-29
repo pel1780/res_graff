@@ -1,0 +1,52 @@
+body {
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.025em;
+}
+
+input,
+button,
+textarea {
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn_o {
+    background: transparent;
+    border: none;
+    outline: none;
+    line-height: 1;
+
+}
+
+.bold {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex_inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mc {
+    color: #ff6347;
+}
+
+.mbg {
+    background: #f9f9f9;
+}
+
+.sec {
+    padding: 100px 0;
+}
