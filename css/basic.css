@@ -50,3 +50,46 @@ button {
 .sec {
     padding: 100px 0;
 }
+
+.sec .tit {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec .tit h2 {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.4em;
+    margin: 0 0 10px 0;
+}
+
+.sec .tit .tit_dec {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 0 50px 0;
+    word-break: keep-all;
+    line-height: 24px;
+}
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #444;
+    padding: 4px 20px 3px 20px;
+}
+
+.label {
+    border: 10px solid #ff6347;
+    border-right: 10px solid transparent;
+    height: 0;
+}
+
+.label>span {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    transform: translate(0, -50%);
+    padding: 0 20px 0 0;
+}
