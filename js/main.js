@@ -139,5 +139,34 @@ $(function () {
         if ($(this).hasClass('on')) {
             return false;
         }
+    });
+
+    $(window).on('scroll', function () {
+        var sct = $(window).scrollTop();
+        // console.log(sct);
+        // if (sct > 1000) {
+        //     $('.to_top').fadeIn();
+        // } else {
+        //     $('.to_top').fadeOut();
+        // }
+        //제이쿼리 애니메이션이라서 바닐라스크립트, 리엑트, 뷰 요런 데에서 
+        // 사용할 수 없음
+
+        if (sct > 1000) {
+            $('.to_top').addClass('on');
+        } else {
+            $('.to_top').removeClass('on');
+        }
+
+    })
+
+    $('.to_top').on('click', function () {
+        $('html, body').stop().animate({ scrollTop: 0 }, 600)
+    });
+    // totop button 작동
+
+    $('.header .search_toggle button').on('click', function () {
+        // $('.header .search').slideToggle();
+        $('.header .search').toggleClass('on');
     })
 });

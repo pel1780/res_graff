@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="./css/aos.css">
 
     <!-- main.css -->
-    <link rel="stylesheet" href="./css/main.css?ver=20221219">
+    <link rel="stylesheet" href="./css/main.css?ver=20230104">
 
 
 
@@ -41,7 +41,7 @@
     <script src="./js/aos.js"></script>
 
     <!-- main.js  -->
-    <script src="./js/main.js?ver=20221219"></script>
+    <script src="./js/main.js?ver=20230104"></script>
 
 
 </head>
@@ -78,6 +78,9 @@
                         <input type="text" placeholder="검색어를 입력해주세요">
                         <button><i class="xi-search"></i></button>
                     </form>
+                </div>
+                <div class="search_toggle">
+                    <button class="btn_o"><i class="xi-search"></i></button>
                 </div>
                 <div class="m_open">
                     <button class="m_btn">
@@ -188,7 +191,7 @@
                         <div class="label">
                             <span>NEW</span>
                         </div>
-                        <video src="./img/movie.mp4"></video>
+                        <video src="./img/movie.mp4" autoplay muted playsinline></video>
                     </div>
                     <div class="promotion_dec">
                         <div class="tit">
@@ -448,7 +451,6 @@
                 </div>
             </section>
         </main>
-
         <!-- footer -->
         <footer class="footer">
             <div class="top">
@@ -497,10 +499,32 @@
                 </div>
             </div>
         </footer>
+        <div class="to_top">
+            <button><i class="xi-arrow-top"></i></button>
+        </div>
     </div>
 
     <script>
-        AOS.init();
+        var option = {
+            disable: 'phone',
+        }
+
+        AOS.init(option);
+        
+        // $(window).on('load resize', function () {
+        //     var w = $(window).width();
+        //     if (w < 769) {
+        //         option = {
+        //             disable: true,
+        //         }
+        //     } else {
+        //         option = {
+        //             disable: false,
+        //         }
+        //     }
+        //     console.log(option)
+            
+        // })
     </script>
 </body>
 
